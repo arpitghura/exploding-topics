@@ -98,11 +98,13 @@ const Footer = () => {
         </div>
         <div className=" w-full flex menu-group flex-row justify-between">
           <div className="footer_block f_menu_block">
-            <h6 className="font-bold text-base">Explore</h6>
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Explore
+            </h6>
             <ul className="footer_menu">
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/new"
                 >
                   Add a Topic
@@ -110,7 +112,7 @@ const Footer = () => {
               </li>
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/newsletter"
                 >
                   Newsletter
@@ -118,7 +120,7 @@ const Footer = () => {
               </li>
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/blog/library"
                 >
                   Blog
@@ -126,7 +128,7 @@ const Footer = () => {
               </li>
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/affiliate"
                 >
                   Affiliates
@@ -135,11 +137,13 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer_block f_menu_block">
-            <h6 className="font-bold text-base">Company</h6>
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Company
+            </h6>
             <ul className="footer_menu">
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/"
                 >
                   Home
@@ -147,7 +151,7 @@ const Footer = () => {
               </li>
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/about"
                 >
                   About
@@ -155,7 +159,7 @@ const Footer = () => {
               </li>
               <li className=" my-6">
                 <Link
-                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
                   href="/contact"
                 >
                   Contact
@@ -164,34 +168,36 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer_block f_address_block">
-            <h6 className="font-bold text-base">Connect</h6>
-            <p className="text-sm text-tertiary my-6">
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Connect
+            </h6>
+            <p className="text-sm text-secondary my-6">
               548 Market St. Suite 95149 <br />
               San Francisco, California
             </p>
           </div>
         </div>
       </div>
-      <div className="flex items-start justify-end mt-10">
+      <div className="flex items-start justify-end my-10">
         <div className="privacy-terms-group px-4 justify-start w-1/2">
           <Link
-            className="mr-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+            className="mr-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
             href="/privacy"
           >
             Privacy Notice
           </Link>
           <Link
-            className="mx-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+            className="mx-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
             href="/terms"
           >
             Terms of Service
           </Link>
         </div>
-        <p className=" min-w-fit copyright_text text-sm text-tertiary">
+        <p className=" min-w-fit copyright_text text-sm text-secondary">
           &copy; 2024
           <Link
             href="/"
-            className="mx-2 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-tertiary hover:border-opacity-100"
+            className="mx-2 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
           >
             Exploding Topics
           </Link>

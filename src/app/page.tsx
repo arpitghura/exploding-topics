@@ -8,15 +8,18 @@ export default function Home() {
   return (
     <Fragment>
       <Navbar />
-      <main className="container flex min-h-screen flex-col items-center">
+      <main className="container p-8 flex min-h-screen flex-col items-center">
         <HeroSec />
         <div className="container p-8 flex flex-row items-center justify-between gap-8 flex-wrap">
-          <DataCard />
-          <DataCard />
-          <DataCard />
-          <DataCard />
-          <DataCard />
-          <DataCard />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={false} />
+          <DataCard isProOnly={true} />
         </div>
       </main>
       <Footer />
