@@ -7,7 +7,7 @@ const Navbar = () => {
         <Link href="/">
           <svg
             width="236"
-            height="18"
+            height="16"
             viewBox="0 0 236 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,17 +98,26 @@ const Navbar = () => {
         <nav className="main_menu">
           <ul className="flex items-center justify-around gap-4 p-2">
             <li className="list-none">
-              <Link className="p-2 font-semibold" href="/about">
+              <Link
+                className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
+                href="/about"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link className="p-2 font-semibold" href="/newsletter">
+              <Link
+                className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
+                href="/newsletter"
+              >
                 Newsletter
               </Link>
             </li>
             <li>
-              <Link className="p-2 font-semibold" href="/blog/library">
+              <Link
+                className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
+                href="/blog/library"
+              >
                 Blog
               </Link>
             </li>
