@@ -16,7 +16,7 @@
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 231, 13%, 40%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --tertiary: 231, 13%, 40%;
@@ -51,7 +51,7 @@
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 231, 13%, 40%;
     --secondary-foreground: 210 40% 98%;
 
     --tertiary: 231, 13%, 40%;
@@ -77,6 +77,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-secondary;
   }
 }
