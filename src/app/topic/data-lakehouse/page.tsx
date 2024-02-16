@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import RelatedTopics from "@/comps/RelatedTopics";
-import GridLineBg from "@/comps/gridLineBg";
+import GridLineBg from "@/comps/GridLineBg";
 
 const DataLakeHouseTopic = () => {
   return (
