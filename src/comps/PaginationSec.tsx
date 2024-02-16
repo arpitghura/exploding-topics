@@ -19,27 +19,27 @@ const PaginationSec = () => {
           <PaginationItem>
             {currPage !== 1 && (
               <PaginationPrevious
-                href="#"
+                href="/"
                 className="p-1 border border-whitesmoke py-0 h-7 w-7 hover:border-black"
               />
             )}
           </PaginationItem>
           <PaginationItem>
             <PaginationLink
-              href="#"
+              href="/"
               isActive={true}
               className="border border-whitesmoke opacity-100 border-black  mx-1 p-1 h-7 w-7"
             >
               1
             </PaginationLink>
             <PaginationLink
-              href="#"
+              href="/"
               className="border border-whitesmoke opacity-60 hover:opacity-100 hover:border-black mx-1 p-1 h-7 w-7"
             >
               2
             </PaginationLink>
             <PaginationLink
-              href="#"
+              href="/"
               className="border border-whitesmoke opacity-60 hover:opacity-100 hover:border-black mx-1 p-1 h-7 w-7"
             >
               3
@@ -47,7 +47,7 @@ const PaginationSec = () => {
           </PaginationItem>
           <PaginationItem>
             <PaginationNext
-              href="#"
+              href="/"
               className="p-1 border border-whitesmoke py-0 h-7 w-7 hover:border-black"
             />
           </PaginationItem>

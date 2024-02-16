@@ -60,3 +60,23 @@
     @apply bg-background text-secondary;
   }
 }
+
+.narrowPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 900px;
+  margin: auto;
+  max-width: calc(100% - 60px);
+}
+
+.widePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 1200px;
+  margin: auto;
+  max-width: calc(100% - 60px);
+}

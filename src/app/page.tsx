@@ -9,9 +9,10 @@ export default function Home() {
   return (
     <Fragment>
       <Navbar />
-      <main className="container p-8 pb-0 flex min-h-screen flex-col items-center">
+      <main className="widePageContainer">
         <HeroSec />
-        <div className="container p-8 flex flex-row items-center justify-between gap-8 flex-wrap">
+        {/* <div className="p-8 flex flex-row items-center justify-between gap-8 flex-wrap"> */}
+        <div className="flex flex-row flex-wrap flex-start my-0 -mx-2.5 pb-10">
           <DataCard isProOnly={false} />
           <DataCard isProOnly={false} />
           <DataCard isProOnly={false} />
@@ -21,8 +22,8 @@ export default function Home() {
           <DataCard isProOnly={false} />
           <DataCard isProOnly={false} />
           <DataCard isProOnly={true} />
-          <PaginationSec />
         </div>
+        <PaginationSec />
       </main>
       <Footer />
     </Fragment>

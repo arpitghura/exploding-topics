@@ -96,12 +96,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="header_right flex justify-around items-center gap-8 text-base leading-tight">
-        <nav className="main_menu">
+        <nav className="main_menu hidden md:block">
           <ul className="flex items-center justify-around gap-4 p-2">
             <li className="list-none">
               <Link
                 className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
-                href="/about"
+                href="#about"
               >
                 About
               </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <li>
               <Link
                 className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
-                href="/newsletter"
+                href="#newsletter"
               >
                 Newsletter
               </Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
             <li>
               <Link
                 className="p-2 font-semibold text-tertiary transition-colors ease hover:text-foreground"
-                href="/blog/library"
+                href="#blog/library"
               >
                 Blog
               </Link>
@@ -125,7 +125,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="go_with_pro p-1">
-          <Link href="/pro">
+          <Link href="#pro">
             <Image src={"/freeToPro.svg"} width="42" height="25" alt="pro" />
           </Link>
         </div>

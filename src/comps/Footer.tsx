@@ -2,12 +2,12 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Fragment } from "react";
 
-const Footer = () => {
+const FooterSec = () => {
   return (
     <Fragment>
       <Separator className=" my-20" />
       <footer className="px-2 md:px-6 lg:px-12 xl:px-24 py-6">
-        <div className="flex justify-evenly">
+        <div className="flex flex-wrap justify-evenly">
           <div className="footer_left w-3/5">
             <Link href="/">
               <svg
@@ -99,7 +99,7 @@ const Footer = () => {
               </svg>
             </Link>
           </div>
-          <div className=" w-full flex menu-group flex-row justify-between">
+          <div className="w-full flex menu-group flex-row justify-between">
             <div className="footer_block f_menu_block">
               <h6 className="font-bold text-base text-secondary-foreground">
                 Explore
@@ -108,7 +108,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/new"
+                    href="#new"
                   >
                     Add a Topic
                   </Link>
@@ -116,7 +116,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/newsletter"
+                    href="#newsletter"
                   >
                     Newsletter
                   </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/blog/library"
+                    href="#blog/library"
                   >
                     Blog
                   </Link>
@@ -132,7 +132,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/affiliate"
+                    href="#affiliate"
                   >
                     Affiliates
                   </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/about"
+                    href="#about"
                   >
                     About
                   </Link>
@@ -163,7 +163,7 @@ const Footer = () => {
                 <li className=" my-6">
                   <Link
                     className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/contact"
+                    href="#contact"
                   >
                     Contact
                   </Link>
@@ -185,13 +185,13 @@ const Footer = () => {
           <div className="privacy-terms-group px-4 justify-start w-1/2">
             <Link
               className="mr-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-              href="/privacy"
+              href="#privacy"
             >
               Privacy Notice
             </Link>
             <Link
               className="mx-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-              href="/terms"
+              href="#terms"
             >
               Terms of Service
             </Link>
@@ -211,4 +211,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterSec;
