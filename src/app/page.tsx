@@ -3,11 +3,13 @@ import Footer from "@/comps/Footer";
 import HeroSec from "@/comps/Hero";
 import Navbar from "@/comps/Navbar";
 import PaginationSec from "@/comps/PaginationSec";
+import GridLineBg from "@/comps/gridLineBg";
 import { Fragment } from "react";
 
 export default function Home() {
   return (
     <Fragment>
+      <GridLineBg />
       <Navbar />
       <main className="widePageContainer">
         <HeroSec />

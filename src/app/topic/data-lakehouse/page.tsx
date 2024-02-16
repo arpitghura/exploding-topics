@@ -4,10 +4,12 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import RelatedTopics from "@/comps/RelatedTopics";
+import GridLineBg from "@/comps/gridLineBg";
 
 const DataLakeHouseTopic = () => {
   return (
     <Fragment>
+      <GridLineBg />
       <Navbar />
       <main className="narrowPageContainer">
         <div className="breadcrumb flex mt-12">
