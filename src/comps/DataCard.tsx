@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import LineChart from "./LineChart";
 
 interface DataCardProps {
   isProOnly: boolean;
@@ -42,13 +43,9 @@ const DataCard: React.FC<DataCardProps> = ({ isProOnly = false }) => (
             </div>
           </CardHeader>
           <CardContent className="p-0">
-            <Image
-              src="/download.png"
-              alt=""
-              width="500"
-              height="100"
-              className="w-full h-full py-3"
-            />
+            <div className="w-full h-full py-3">
+              <LineChart />
+            </div>
             <p className="text-secondary text-sm mb-6 line-clamp-2 overflow-hidden text-ellipsis">
               Machine learning operations. A set of best practices in the
               machine learning development cycle.
