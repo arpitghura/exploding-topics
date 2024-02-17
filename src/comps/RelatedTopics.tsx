@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
+import LineChart from "./LineChart";
 
 const RelatedTopics = () => {
   return (
@@ -16,7 +17,9 @@ const RelatedTopics = () => {
           <Link href="#" className="separator-table">
             <TableRow className="flex justify-between items-center mt-3 hover:bg-transparent">
               <TableCell className="font-medium">Dremio</TableCell>
-              <TableCell>Paid</TableCell>
+              <TableCell className=" h-16 justify-center">
+                <LineChart isShowXMarking={false} isShowYMarking={false} />
+              </TableCell>
               <TableCell className="text-right">
                 <div className="flex flex-col">
                   <p className="text-primary text-xs font-bold">12.1K</p>
@@ -30,7 +33,9 @@ const RelatedTopics = () => {
           <Link href="#" className="separator-table">
             <TableRow className="flex justify-between items-center mt-3 hover:bg-transparent">
               <TableCell className="font-medium">Dremio</TableCell>
-              <TableCell>Paid</TableCell>
+              <TableCell className=" h-16 justify-center">
+                <LineChart isShowXMarking={false} isShowYMarking={false} />
+              </TableCell>
               <TableCell className="text-right">
                 <div className="flex flex-col">
                   <p className="text-primary text-xs font-bold">12.1K</p>
@@ -44,7 +49,9 @@ const RelatedTopics = () => {
           <Link href="#" className="separator-table">
             <TableRow className="flex justify-between items-center mt-3 hover:bg-transparent">
               <TableCell className="font-medium">Dremio</TableCell>
-              <TableCell>Paid</TableCell>
+              <TableCell className=" h-16 justify-center">
+                <LineChart isShowXMarking={false} isShowYMarking={false} />
+              </TableCell>
               <TableCell className="text-right">
                 <div className="flex flex-col">
                   <p className="text-primary text-xs font-bold">12.1K</p>
@@ -58,7 +65,9 @@ const RelatedTopics = () => {
           <Link href="#" className="separator-table">
             <TableRow className="flex justify-between items-center mt-3 hover:bg-transparent">
               <TableCell className="font-medium">Dremio</TableCell>
-              <TableCell>Paid</TableCell>
+              <TableCell className=" h-16 justify-center">
+                <LineChart isShowXMarking={false} isShowYMarking={false} />
+              </TableCell>
               <TableCell className="text-right">
                 <div className="flex flex-col">
                   <p className="text-primary text-xs font-bold">12.1K</p>
@@ -72,7 +81,9 @@ const RelatedTopics = () => {
           <Link href="#" className="separator-table">
             <TableRow className="flex justify-between items-center mt-3 hover:bg-transparent">
               <TableCell className="font-medium">Dremio</TableCell>
-              <TableCell>Paid</TableCell>
+              <TableCell className=" h-16 justify-center">
+                <LineChart isShowXMarking={false} isShowYMarking={false} />
+              </TableCell>
               <TableCell className="text-right">
                 <div className="flex flex-col">
                   <p className="text-primary text-xs font-bold">12.1K</p>

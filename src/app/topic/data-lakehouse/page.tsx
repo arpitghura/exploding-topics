@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/comps/Footer";
 import Navbar from "@/comps/Navbar";
 import { Fragment } from "react";
@@ -5,6 +6,13 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import RelatedTopics from "@/comps/RelatedTopics";
 import GridLineBg from "@/comps/GridLineBg";
+import LineChart from "@/comps/LineChart";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const DataLakeHouseTopic = () => {
   return (
@@ -30,6 +38,25 @@ const DataLakeHouseTopic = () => {
           <p className="">
             Data solution concept combining "data warehouse" and "data lake".
           </p>
+        </div>
+
+        <div className="category w-full bg-white px-5 py-10 shadow-sm my-3">
+          <div className="h-1/2">
+            <LineChart />
+          </div>
+
+          <div className="tooltip mt-16">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger className="text-xs py-1 px-2 rounded text-gray-500 bg-gray-100 font-semibold border-2 border-gray-200 uppercase tracking-wide">
+                  Exploding
+                </TooltipTrigger>
+                <TooltipContent className="p-3">
+                  <p>Steep, hockey stick growth</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
         </div>
 
         <div className="category w-full bg-white px-5 py-10 shadow-sm my-3">

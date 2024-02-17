@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/tooltip";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import LineChart from "./LineChart";
 
@@ -44,7 +43,7 @@ const DataCard: React.FC<DataCardProps> = ({ isProOnly = false }) => (
           </CardHeader>
           <CardContent className="p-0">
             <div className="w-full h-full py-3">
-              <LineChart />
+              <LineChart isShowYMarking={false} />
             </div>
             <p className="text-secondary text-sm mb-6 line-clamp-2 overflow-hidden text-ellipsis">
               Machine learning operations. A set of best practices in the
