@@ -90,7 +90,8 @@ const DataLakeHouseTopic = () => {
             Data Lakehouse
           </h2>
           <p className="">
-            Data solution concept combining "data warehouse" and "data lake".
+            Data solution concept combining &quot;data warehouse&quot; and
+            &quot;data lake&quot;.
           </p>
         </div>
 
