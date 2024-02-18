@@ -5,10 +5,10 @@ import { Fragment } from "react";
 const FooterSec = () => {
   return (
     <Fragment>
-      <Separator className=" my-20" />
+      <Separator className="my-20" />
       <footer className="px-2 md:px-6 lg:px-12 xl:px-24 py-6">
-        <div className="flex flex-wrap justify-evenly">
-          <div className="footer_left w-3/5">
+        <div className="flex flex-wrap justify-start gap-3">
+          <div className=" mr-16 w-full mb-10 md:w-max">
             <Link href="/">
               <svg
                 width="236"
@@ -99,90 +99,90 @@ const FooterSec = () => {
               </svg>
             </Link>
           </div>
-          <div className="w-full flex menu-group flex-row justify-between">
-            <div className="footer_block f_menu_block">
-              <h6 className="font-bold text-base text-secondary-foreground">
-                Explore
-              </h6>
-              <ul className="footer_menu">
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#new"
-                  >
-                    Add a Topic
-                  </Link>
-                </li>
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#newsletter"
-                  >
-                    Newsletter
-                  </Link>
-                </li>
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#blog/library"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#affiliate"
-                  >
-                    Affiliates
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="footer_block f_menu_block">
-              <h6 className="font-bold text-base text-secondary-foreground">
-                Company
-              </h6>
-              <ul className="footer_menu">
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#about"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li className=" my-6">
-                  <Link
-                    className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
-                    href="#contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="footer_block f_address_block">
-              <h6 className="font-bold text-base text-secondary-foreground">
-                Connect
-              </h6>
-              <p className="text-sm text-secondary my-6">
-                548 Market St. Suite 95149 <br />
-                San Francisco, California
-              </p>
-            </div>
+          {/* <div className="flex menu-group flex-row justify-between"> */}
+          <div className="w-2/5 md:w-1/5">
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Explore
+            </h6>
+            <ul className="footer_menu">
+              <li className="my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#new"
+                >
+                  Add a Topic
+                </Link>
+              </li>
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#newsletter"
+                >
+                  Newsletter
+                </Link>
+              </li>
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#blog/library"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#affiliate"
+                >
+                  Affiliates
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="w-2/5 md:w-1/5">
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Company
+            </h6>
+            <ul className="footer_menu">
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#about"
+                >
+                  About
+                </Link>
+              </li>
+              <li className=" my-6">
+                <Link
+                  className="border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
+                  href="#contact"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/5">
+            <h6 className="font-bold text-base text-secondary-foreground">
+              Connect
+            </h6>
+            <p className="text-sm text-secondary my-6">
+              548 Market St. Suite 95149 <br />
+              San Francisco, California
+            </p>
           </div>
         </div>
-        <div className="flex items-start justify-end my-10">
-          <div className="privacy-terms-group px-4 justify-start w-1/2">
+        {/* </div> */}
+        <div className="flex items-start md:justify-end flex-wrap">
+          <div className="privacy-terms-group md:px-4 justify-end my-10 w-full md:2/5">
             <Link
               className="mr-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
               href="#privacy"
@@ -196,7 +196,7 @@ const FooterSec = () => {
               Terms of Service
             </Link>
           </div>
-          <p className=" min-w-fit copyright_text text-sm text-secondary">
+          <p className="min-w-fit copyright_text text-sm text-secondary my-10 md:w-2/6 md:translate-x-8">
             &copy; 2024
             <Link
               href="/"
