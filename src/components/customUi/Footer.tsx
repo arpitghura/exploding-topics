@@ -182,7 +182,7 @@ const FooterSec = () => {
         </div>
         {/* </div> */}
         <div className="flex items-start md:justify-end flex-wrap">
-          <div className="privacy-terms-group md:px-4 justify-end my-10 w-full md:2/5">
+          <div className="privacy-terms-group md:px-4 justify-end my-10 w-full md:w-2/5">
             <Link
               className="mr-4 border-b border-black border-opacity-0 transition-opacity ease-out text-sm text-secondary hover:border-opacity-100"
               href="#privacy"

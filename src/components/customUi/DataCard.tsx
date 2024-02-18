@@ -23,7 +23,7 @@ interface DataCardProps {
 
 const DataCard: React.FC<DataCardProps> = ({ isProOnly = false }) => (
   <div className="relative w-full md:w-[calc(100%_-_20px)] lg:w-[calc((100%_-_40px)_/_2)] xl:w-[calc((100%_-60px)_/_3)] mx-1 my-3 md:m-2">
-    <Link href={`${isProOnly ? "/pro" : "/topic/data-lakehouse"}`}>
+    <Link href={`${isProOnly ? "#pro" : "/topic/data-lakehouse"}`}>
       <Card className="p-4 bg-white group items-center space-y-0 space-x-0 transition-all ease-in duration-300 border-transparent rounded hover:border-[#2e5ce5]">
         <div className={`${isProOnly && "blur"}`}>
           <CardHeader className="flex flex-row justify-between p-0 space-y-0">

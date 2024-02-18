@@ -1,21 +1,21 @@
 "use client";
-import Footer from "@/comps/Footer";
-import Navbar from "@/comps/Navbar";
+import Footer from "@/components/customUi/Footer";
+import Navbar from "@/components/customUi/Navbar";
 import { Fragment } from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import RelatedTopics from "@/comps/RelatedTopics";
-import GridLineBg from "@/comps/GridLineBg";
-import LineChart from "@/comps/LineChart";
+import RelatedTopics from "@/components/customUi/RelatedTopics";
+import GridLineBg from "@/components/customUi/GridLineBg";
+import LineChart from "@/components/customUi/LineChart";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import SelectCard from "@/comps/SelectCard";
+import SelectCard from "@/components/customUi/SelectCard";
 import { Switch } from "@/components/ui/switch";
-import ProModal from "@/comps/ProModal";
+import ProModal from "@/components/customUi/ProModal";
 
 const ForeCastProEle = (
   <div className="bg-blue-50 flex flex-row items-center justify center py-1 px-2 border text-blue-500 gap-3">
