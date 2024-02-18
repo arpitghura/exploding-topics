@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <header className="flex px-6 md:px-12 lg:px-24 xl:px-32 py-6 justify-between items-center header_sec">
+    <header className="relative flex px-6 md:px-12 lg:px-24 xl:px-32 py-6 justify-between items-center header_sec">
       <div className="header_left">
         <Link href="/">
           <svg
@@ -96,6 +96,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="header_right flex justify-around items-center gap-8 text-base leading-tight">
+        <MobileNav />
         <nav className="main_menu hidden md:block">
           <ul className="flex items-center justify-around gap-4 p-2">
             <li className="list-none">
@@ -163,20 +164,6 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-
-    // <div className="header_right">
-    // <div className="mobile_actions visible_mobile">
-    //     <ul>
-    //     <li>
-    //         <button type="button" className="menuToggle">
-    //         <span></span>
-    //         <span></span>
-    //         <span></span>
-    //         </button>
-    //     </li>
-    //     </ul>
-    // </div>
-    // </div>
   );
 };
 
