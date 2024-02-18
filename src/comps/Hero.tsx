@@ -4,7 +4,7 @@ import SelectCard from "./SelectCard";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 
 const ModalTriggerEle = (
-  <div className="flex flex-row justify-center items-center w-full border hover:border-black px-2 py-1 md:w-max">
+  <div className="flex flex-row justify-center items-center w-full px-2 py-1 md:w-max">
     <MagnifyingGlassIcon width={20} />
     <input
       type="text"
@@ -50,11 +50,9 @@ const HeroSec = () => {
       <h2 className="font-bold text-3xl text-secondary-foreground">
         Discover Exploding Topics
       </h2>
-      <p className="">
-        We surface rapidly growing topics before they take off.
-      </p>
+      <p>We surface rapidly growing topics before they take off.</p>
       <div>
-        <div className="search-options flex flex-wrap md:flex-nowrap items-center justify-center w-full">
+        <div className="search-options flex flex-wrap md:flex-nowrap items-center  w-full bg-transparent">
           <span className="text-left text-sm uppercase font-bold text-nowrap w-max">
             Filter By:
           </span>
@@ -66,7 +64,7 @@ const HeroSec = () => {
               <CategorySelection />
             </div>
           </div>
-          <div className="p-2">
+          <div className=" border hover:border-black flex-stretch my-2 md:my-0">
             <ProModal TriggerEle={ModalTriggerEle} />
           </div>
         </div>
