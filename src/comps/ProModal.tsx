@@ -1,19 +1,26 @@
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
 
-function ProModal() {
+interface ProModalProps {
+  TriggerEle: React.ReactNode;
+}
+
+const ProModal: React.FC<ProModalProps> = ({ TriggerEle }) => {
   return (
     <Dialog>
-      <DialogTrigger>Open</DialogTrigger>
+      <DialogTrigger>{TriggerEle}</DialogTrigger>
       <DialogContent>
-        <DialogHeader className="p-2">
-          <DialogTitle className="flex gap-5 items-center mb-4 text-lg text-black">
+        <DialogHeader className="p-2 ">
+          <DialogTitle className="flex gap-5 items-center mb-4 text-lg ">
             <svg
               width="42"
               height="25"
@@ -49,18 +56,79 @@ function ProModal() {
             </svg>
             Members Only
           </DialogTitle>
-          <DialogDescription>
-            <div className="flex flex-col gap-10">
-              <p className="text-xl font-bold">
+          <DialogDescription className="py-5">
+            <div className="flex flex-col gap-7">
+              <p className="text-2xl font-bold">
                 This Feature Requires A Pro Subscription
               </p>
+              <p>
+                Get access to these additional features when you become a
+                member.
+              </p>
+              <ul className=" list-inside list-image-none">
+                <Separator />
+                <li className="p-2 flex items-center gap-3">
+                  <svg width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path
+                      d="M1 5.15385L4.00296 8.93758C4.42166 9.46513 5.23158 9.43632 5.61173 8.88035L11 1"
+                      stroke="#3DD4F2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  Full Trends Database
+                </li>
+                <Separator />
+                <li className="p-2 flex items-center gap-3">
+                  <svg width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path
+                      d="M1 5.15385L4.00296 8.93758C4.42166 9.46513 5.23158 9.43632 5.61173 8.88035L11 1"
+                      stroke="#3DD4F2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  Trending Products
+                </li>
+                <Separator />
+                <li className="p-2 flex items-center gap-3">
+                  <svg width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path
+                      d="M1 5.15385L4.00296 8.93758C4.42166 9.46513 5.23158 9.43632 5.61173 8.88035L11 1"
+                      stroke="#3DD4F2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  Trend Forecasting
+                </li>
+                <Separator />
+                <li className="p-2 flex items-center gap-3">
+                  <svg width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path
+                      d="M1 5.15385L4.00296 8.93758C4.42166 9.46513 5.23158 9.43632 5.61173 8.88035L11 1"
+                      stroke="#3DD4F2"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  Meta Trends
+                </li>
+                <Separator />
+              </ul>
             </div>
-            Get access to these additional features when you become a member.
           </DialogDescription>
         </DialogHeader>
+        <DialogFooter>
+          <div className="flex items-center justify-start gap-5">
+            <Button className="p-4">Learn More</Button>
+            <Button className="p-4" variant="outline" disabled>
+              No, Thanks
+            </Button>
+          </div>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
-}
-
+};
 export default ProModal;
