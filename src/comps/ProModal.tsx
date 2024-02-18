@@ -1,39 +1,19 @@
-import { CategorySelection } from "./CategorySelection";
-import ProModal from "./ProModal";
-import SelectCard from "./SelectCard";
-import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
-const HeroSec = () => {
+function ProModal() {
   return (
-    <div className="flex flex-col text-center items-center gap-7 hero mx-auto my-0 pt-8 pb-10">
-      <h2 className="font-bold text-3xl text-secondary-foreground">
-        Discover Exploding Topics
-      </h2>
-      <p className="">
-        We surface rapidly growing topics before they take off.
-      </p>
-      <div>
-        <div className="search-options flex flex-wrap md:flex-nowrap items-center justify-center w-full">
-          <span className="text-left text-sm uppercase font-bold text-nowrap w-max">
-            Filter By:
-          </span>
-          <div className="flex flex-row gap-3 justify-center w-full items-center flex-auto">
-            <div className="w-full md:w-max">
-              <SelectCard />
-            </div>
-            <div className="w-full relative md:w-max">
-              <CategorySelection />
-            </div>
-          </div>
-          <div className="flex flex-row justify-center items-center w-full border hover:border-black px-2 py-1 md:w-max">
-            <MagnifyingGlassIcon width={20} />
-            <input
-              type="text"
-              name="trends"
-              id="trends"
-              placeholder="Search Trends"
-              className="text-sm px-1 w-full bg-transparent border-none focus:outline-none focus:border-none focus:ring-0 focus:ring-transparent focus:border-transparent focus:ring-0"
-            />
+    <Dialog>
+      <DialogTrigger>Open</DialogTrigger>
+      <DialogContent>
+        <DialogHeader className="p-2">
+          <DialogTitle className="flex gap-5 items-center mb-4 text-lg text-black">
             <svg
               width="42"
               height="25"
@@ -67,11 +47,20 @@ const HeroSec = () => {
                 fill="white"
               ></path>
             </svg>
-          </div>
-        </div>
-      </div>
-    </div>
+            Members Only
+          </DialogTitle>
+          <DialogDescription>
+            <div className="flex flex-col gap-10">
+              <p className="text-xl font-bold">
+                This Feature Requires A Pro Subscription
+              </p>
+            </div>
+            Get access to these additional features when you become a member.
+          </DialogDescription>
+        </DialogHeader>
+      </DialogContent>
+    </Dialog>
   );
-};
+}
 
-export default HeroSec;
+export default ProModal;

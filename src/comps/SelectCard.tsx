@@ -9,12 +9,6 @@ import {
   SelectLabel,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 function SelectCard() {
   const openModal = (e: any) => {
@@ -25,7 +19,7 @@ function SelectCard() {
   return (
     <div className="select-card border-1 hover:border-black rounded">
       <Select>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="min-w-[180px]">
           <SelectValue placeholder="5 Years" />
         </SelectTrigger>
         <SelectContent>

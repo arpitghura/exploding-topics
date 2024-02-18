@@ -11,7 +11,7 @@ export default function Home() {
     <Fragment>
       <GridLineBg />
       <Navbar />
-      <main className="widePageContainer">
+      <main className=" container">
         <HeroSec />
         <div className="flex flex-row flex-wrap flex-start my-0 -mx-2.5 pb-10">
           <DataCard isProOnly={false} />

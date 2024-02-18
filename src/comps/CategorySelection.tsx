@@ -2,6 +2,8 @@
 import * as React from "react";
 import Link from "next/link";
 
+import { ChevronUpIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+
 const components: { title: string; href: string }[] = [
   {
     title: "Featured",
@@ -126,15 +128,19 @@ const components: { title: string; href: string }[] = [
 ];
 
 export function CategorySelection() {
+  const [SelectUpIcon, setSelectUpIcon] = React.useState(false);
+
   return (
     <div className="border hover:border-black">
       <button
-        className="flex py-1 px-3 text-base"
+        className="flex py-2 px-3 text-sm items-center gap-3"
         onClick={() => {
           document.querySelector("#allCategories")?.classList.toggle("hidden");
+          setSelectUpIcon((prev) => !prev);
         }}
       >
         All Categories
+        {SelectUpIcon ? <ChevronUpIcon /> : <ChevronDownIcon />}
       </button>
       <div
         className="w-[calc(100vw_/_2)] absolute gap-3 p-4 -left-full top-9 flex flex-wrap justify-center items-center bg-white rounded z-20 hidden"
